@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Toutes les annonces{% endblock %}
+
+{% block body %}
+<div class="container mt-4">
+    <h1>Vous affichez toutes les annonces</h1>
+    <hr>
+
+    
+    <div class="row">
+        <div class="card col-4" style="width: 18rem;">
+            <img src="https://place-hold.it/600x400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Annonce 1</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{{ path("annonce") }}" class="btn btn-primary">Voir l'annonce</a>
+            </div>
+        </div>
+        <div class="card col-4" style="width: 18rem;">
+            <img src="https://place-hold.it/600x400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Annonce 2</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{{ path("annonce") }}" class="btn btn-primary">Voir l'annonce</a>
+            </div>
+        </div>
+        <div class="card col-4" style="width: 18rem;">
+            <img src="https://place-hold.it/600x400" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Annonce 3</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{{ path("annonce") }}" class="btn btn-primary">Voir l'annonce</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
